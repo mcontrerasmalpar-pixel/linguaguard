@@ -1,0 +1,8 @@
+name: linguaguard
+version: 0.1.0
+description: Multilingual mod tool — detect, translate, and act on off-language posts using Gemini AI
+
+permissions:
+  http:
+    allowedDomains:
+      - generativelanguage.googleapis.com

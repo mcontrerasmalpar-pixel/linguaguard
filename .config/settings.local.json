@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npx devvit:*)",
+      "Bash(xargs grep:*)",
+      "Bash(npm install:*)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:d[k] for k in [''''exports'''',''''main'''',''''type''''] if k in d}, indent=2\\)\\)\")",
+      "Bash(node -e \"require.resolve\\(''''@devvit/cli/package.json''''\\)\")",
+      "Bash(node -e \"console.log\\(require.resolve.toString\\(\\)\\)\")",
+      "Bash(node -e \"const p=require\\(''''child_process''''\\).execSync\\(''''npx devvit --version''''\\).toString\\(\\); console.log\\(p\\)\")"
+    ]
+  }
+}
